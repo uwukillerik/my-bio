@@ -22,7 +22,7 @@
 
 ###
 
-<h2 align="center">Project MY-BIO</h2>
+<h2 align="center">Project MY-BIO<br>https://uwukillerik.github.io/my-bio/</h2>
 
 ###
 
