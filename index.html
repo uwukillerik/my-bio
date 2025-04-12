@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="og:image" content="favicon.png">
+        <title>uwukiller</title>
+        
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script defer src="js/cursor.js"></script>
+        <script defer src="js/lanyard.js"></script>
+        <script defer src="js/preloader.js"></script>
+        <script defer src="js/projects.js"></script>
+        <script defer src="js/scrollActions.js"></script>
+        <script defer src="js/footerTime.js"></script>
+        <script defer src="js/designs.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
+        <script src="https://threejs.org/build/three.js"></script>
+        
+        <script>
+            setTimeout(() => {
+            const preload = document.querySelector('.preload');
+            const loadingText = document.querySelector('.preload__container__text h1');
+                
+            // Добавляем класс с анимацией точек
+            loadingText.classList.add('loading-dots');
+                
+            preload.classList.add('fade-out');
+                
+            preload.addEventListener('animationend', () => {
+            preload.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            });
+            }, 3000);
+        </script>
+    </head>
+    <body>
+        <div class="preload">
+            <div class="preload__container">
+                <div class="preload__container__text">
+                    <h1>Loading...</h1>
+                    <canvas id="animation"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="lanyard-wrapper">
+                <img alt="Profile Picture" class="lanyard-profile-picture" src="https://endway.org/data/avatars/o/46/46663.jpg?1744262726">
+                <div class="column">
+                    <div class="lanyard-username-wrapper">
+                        <div class="lanyard-content">
+                            <div class="lanyard-username">uwukillerik</div>
+                        </div>
+                        <div class="lanyard-tooltip">
+                            <img src="https://endway.org/styles/endwayui/basic/publicLogoUrl.png" alt="Логотип" class="tooltip-logo">
+                            <a href="https://endway.org/members/uwukillerik.46663/" class="tooltip-link">uwukillerik</a>
+
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256' fill='none'%3E%3Cg clip-path='url(%23clip0_123_378)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M70.1504 207.392C91.8146 224.992 116.842 235.022 143.533 235.022C183.225 235.022 219.257 212.775 245.995 176.542C234.706 161.247 221.764 148.436 207.575 138.751L184.794 150.124C189.69 157.741 192.542 166.809 192.542 176.542C192.542 203.577 170.604 225.491 143.533 225.491C122.499 225.491 104.566 212.252 97.6139 193.666L70.1504 207.38V207.392ZM126.67 179.168C127.216 182.721 128.88 186.025 131.459 188.604C134.656 191.8 139.005 193.595 143.533 193.583C152.957 193.583 160.598 185.953 160.598 176.542C160.598 171.919 158.756 167.724 155.761 164.646L126.682 179.168H126.67Z' fill='%232BAD72'/%3E%3Cpath d='M76.3528 176.16L242.405 96.3367L205.91 20.4229L187.062 87.507L164.412 40.3758L145.552 107.46L122.902 60.3287L104.042 127.413L81.3916 80.2816L62.5319 147.366L39.8814 100.235L9.4707 208.318L50.9809 188.365L76.3528 176.172V176.16Z' fill='%232BAD72'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_123_378'%3E%3Crect width='236.512' height='214.598' fill='white' transform='translate(9.4707 20.4229)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E" alt="Форумный логотип" class="tooltip-logo">
+                            <a href="https://lolz.live/members/2585724/" class="tooltip-link">WistGames</a>
+                        </div>
+                    </div>
+                    <div class="lanyard-activity"></div>
+                </div>
+            </div>                        
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="https://discordapp.com/users/302050872383242240" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/uwukillerik" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/uwukiller" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>               
+                </ul>
+            </div>
+        </div>
+
+        <div class="home-wrapper" id="home">
+            <h1 class="title">uwukiller</h1>
+            <h2 class="subtitle">19 year old <span>developer</span> from the Russia</h2>
+            <div class="languages-wrapper">
+                <ul>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js-square"></i></li>
+                    <li><i class="fab fa-node-js"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="projects-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn demo-btn" data-project-id="0">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="https://github.com/uwukillerik/project1" class="project-btn code-btn" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Data Visualizer</h3>
+                    <p class="project-desc">Интерактивная платформа для визуализации данных с поддержкой нескольких форматов</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">D3.js</span>
+                        <span class="tech-badge">Flask</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn demo-btn" data-project-id="1">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="https://github.com/uwukillerik/project2" class="project-btn code-btn" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Neural Art</h3>
+                    <p class="project-desc">Приложение для преобразования фотографий в художественные стили с помощью нейросетей</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">PyTorch</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">FastAPI</span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 3">
+                    <div class="project-overlay">
+                        <div class="project-buttons">
+                            <a href="#" class="project-btn demo-btn" data-project-id="2">
+                                <i class="fas fa-eye"></i> Demo
+                            </a>
+                            <a href="https://github.com/uwukillerik/project3" class="project-btn code-btn" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">CodeCollab</h3>
+                    <p class="project-desc">Онлайн редактор кода с возможностью совместной работы в реальном времени</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">WebSockets</span>
+                        <span class="tech-badge">Monaco</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <h2 class="projects-title">GitHub Projects</h2>
+            <div class="github-projects">
+                <div class="github-project">
+                    <div class="github-project-image">
+                        <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="GitHub Project">
+                        <div class="github-project-links">
+                            <a href="https://github.com/uwukillerik/project1" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="github-project-content">
+                        <h3 class="github-project-title">Awesome Project</h3>
+                        <p class="github-project-description">
+                            Это мой крутой проект, который делает мир лучше. Написан на Python и JavaScript.
+                        </p>
+                        <div class="github-project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="github-project">
+                    <div class="github-project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="GitHub Project">
+                        <div class="github-project-links">
+                            <a href="https://github.com/uwukillerik/project2" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="github-project-content">
+                        <h3 class="github-project-title">Web Application</h3>
+                        <p class="github-project-description">
+                            Мощное веб-приложение с современным интерфейсом и бэкендом на Node.js.
+                        </p>
+                        <div class="github-project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="github-project">
+                    <div class="github-project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="GitHub Project">
+                        <div class="github-project-links">
+                            <a href="https://github.com/uwukillerik/project2" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="github-project-content">
+                        <h3 class="github-project-title">Web Application</h3>
+                        <p class="github-project-description">
+                            Мощное веб-приложение с современным интерфейсом и бэкендом на Node.js.
+                        </p>
+                        <div class="github-project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="github-project">
+                    <div class="github-project-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="GitHub Project">
+                        <div class="github-project-links">
+                            <a href="https://github.com/uwukillerik/project3" target="_blank" class="github-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="https://demo-project3.com" target="_blank" class="demo-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="github-project-content">
+                        <h3 class="github-project-title">UI Library</h3>
+                        <p class="github-project-description">
+                            Библиотека компонентов пользовательского интерфейса для быстрой разработки.
+                        </p>
+                        <div class="github-project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SASS</span>
+                            <span class="tech-tag">Webpack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="projects-title">My Designs</h2>
+            <div class="designs-grid">
+                <div class="design-card">
+                    <div class="design-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d" alt="Design 1">
+                        <div class="design-actions">
+                            <button class="design-view-btn" data-design-id="0">
+                                <i class="fas fa-expand"></i> View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div class="design-meta">
+                        <h3 class="design-title">Finance Dashboard</h3>
+                        <p class="design-category">UI/UX Design</p>
+                        <div class="design-tools">
+                            <span class="tool-tag">Figma</span>
+                            <span class="tool-tag">After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="design-card">
+                    <div class="design-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead" alt="Design 2">
+                        <div class="design-actions">
+                            <button class="design-view-btn" data-design-id="1">
+                                <i class="fas fa-expand"></i> View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div class="design-meta">
+                        <h3 class="design-title">Fitness Mobile App</h3>
+                        <p class="design-category">Mobile Design</p>
+                        <div class="design-tools">
+                            <span class="tool-tag">Sketch</span>
+                            <span class="tool-tag">Principle</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="design-card">
+                    <div class="design-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166" alt="Design 3">
+                        <div class="design-actions">
+                            <button class="design-view-btn" data-design-id="2">
+                                <i class="fas fa-expand"></i> View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div class="design-meta">
+                        <h3 class="design-title">E-commerce Website</h3>
+                        <p class="design-category">Web Design</p>
+                        <div class="design-tools">
+                            <span class="tool-tag">Adobe XD</span>
+                            <span class="tool-tag">Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+        <div class="scroll-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="footer-wrapper">
+            <div class="footer">
+                <div class="left-column">
+                    <span class="current-date"></span>
+                    <span class="current-time"></span>
+                </div>
+                <div class="right-column">
+                    <p class="rights">© 2025 Created By <b>uwukiller</b>  All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="design-modal" id="designModal">
+            <div class="modal-content">
+                <span class="close-design-modal">&times;</span>
+                <img src="" alt="Full Design" id="fullDesignImage">
+                <div class="design-modal-footer">
+                    <h3 id="designModalTitle"></h3>
+                    <p id="designModalDescription"></p>
+                </div>
+            </div>
+        </div>
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        
+        <div class="modal-header">
+            <h2 class="modal-title" id="modalProjectTitle"></h2>
+            <div class="modal-languages" id="modalProjectLanguages"></div>
+        </div>
+        
+        <div class="modal-body">
+            <div class="project-slider">
+            <button class="slider-arrow prev-arrow">&lt;</button>
+            <div class="slider-images" id="projectImages"></div>
+            <button class="slider-arrow next-arrow">&gt;</button>
+            </div>
+            
+            <div class="project-description" id="modalProjectDescription"></div>
+        </div>
+        
+        <div class="modal-footer">
+        <a href="#" class="demo-btn" id="demoLink" target="_blank">Demo</a>
+        <a href="#" class="github-btn" id="githubLink" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>
