@@ -40,7 +40,7 @@
 
 ###
 
-<p align="left">I'm 19 year old from Russia<br><br>- 🔭 I 'm not working yet<br>- 📚 I am currently studying in college<br>- ⚡ In my free time , I write scripts and play</p>
+<p align="left">I'm 20 year old from Russia<br><br>- 🔭 I 'm not working yet<br>- 📚 I am currently studying in college<br>- ⚡ In my free time , I write scripts and play</p>
 
 ###
 
